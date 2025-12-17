@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="The Triton: Treasure Seeker"
+run/main_scene="uid://cy0hwgdrlgj27"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://bmvgqmau08oht"

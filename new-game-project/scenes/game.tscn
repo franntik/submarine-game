@@ -1,0 +1,100 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy0hwgdrlgj27"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_8cj0n"]
+
+[node name="game" type="Node2D"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 1153.0
+offset_bottom = 650.0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="description" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="room-title" type="PanelContainer" parent="MarginContainer/HBoxContainer/description"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/description/room-title"]
+layout_mode = 2
+text = "room title"
+horizontal_alignment = 1
+
+[node name="room-description" type="PanelContainer" parent="MarginContainer/HBoxContainer/description"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HBoxContainer/description/room-description"]
+layout_mode = 2
+text = "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+"
+
+[node name="control-centre" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="observations" type="PanelContainer" parent="MarginContainer/HBoxContainer/control-centre"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HBoxContainer/control-centre/observations"]
+layout_mode = 2
+text = "observations"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="controls" type="MarginContainer" parent="MarginContainer/HBoxContainer/control-centre"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/HBoxContainer/control-centre/controls"]
+layout_mode = 2
+columns = 3
+
+[node name="search" type="Button" parent="MarginContainer/HBoxContainer/control-centre/controls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 26
+text = "search"
+
+[node name="up" type="Button" parent="MarginContainer/HBoxContainer/control-centre/controls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 52
+text = "↑"
+
+[node name="grab" type="Button" parent="MarginContainer/HBoxContainer/control-centre/controls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 26
+text = "grab"
+icon = SubResource("ViewportTexture_8cj0n")
+icon_alignment = 1
+
+[node name="left" type="Button" parent="MarginContainer/HBoxContainer/control-centre/controls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 52
+text = "←"
+
+[node name="down" type="Button" parent="MarginContainer/HBoxContainer/control-centre/controls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 52
+text = "↓"
+
+[node name="right" type="Button" parent="MarginContainer/HBoxContainer/control-centre/controls/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 52
+text = "→"
